@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import AlamofireObjectMapper
 class Forecast: Mappable {
     var day: String?
     var temperature: Int?
