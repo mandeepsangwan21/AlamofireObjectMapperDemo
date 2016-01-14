@@ -32,6 +32,8 @@ class ViewController: UIViewController {
 //                print("Response String: \(response.result.value)")
 //        }
         
+        print(Constants.testStr)
+        
         let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
         Alamofire.request(.GET, URL , parameters: nil)
             .responseJSON { response in
@@ -42,12 +44,9 @@ class ViewController: UIViewController {
                 if let JSON = response.result.value {
                     print("JSON: \(JSON)")
                 }
-                
                 switch response.result {
                 case .Success:
                     if response.response?.statusCode == 200 || response.response?.statusCode == 201 {
-
-                
                 let user = Mapper<WeatherResponse>().map(response.result.value)
                 print(user?.location)
                 self.label.text = user?.location
@@ -70,9 +69,6 @@ class ViewController: UIViewController {
                     print("Success: \(response.result.isSuccess)")
                     print("Response String: \(response.result.value)")
     }
-
-    
-        
         
 
 //        Alamofire.request(.GET, URL).responseObject("data") {

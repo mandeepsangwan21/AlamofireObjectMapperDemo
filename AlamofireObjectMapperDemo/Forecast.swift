@@ -21,6 +21,6 @@ class Forecast: Mappable {
     func mapping(map: Map) {
         day <- map["day"]
         temperature <- map["temperature"]
-        conditions <- map["conditions"]
+        conditions <- map["conditions"]        
     }
 }
