@@ -18,6 +18,7 @@
 		EBBB8EC51C47804E00835291 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB8EC41C47804E00835291 /* WeatherResponse.swift */; settings = {ASSET_TAGS = (); }; };
 		EBBB8EC71C47807900835291 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB8EC61C47807900835291 /* Forecast.swift */; settings = {ASSET_TAGS = (); }; };
 		EBBB8F081C47C71500835291 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB8F071C47C71500835291 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		EBF199E21C4F41A700B131C6 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF199E11C4F41A700B131C6 /* WebServiceHandler.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EBBB8EC41C47804E00835291 /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		EBBB8EC61C47807900835291 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		EBBB8F071C47C71500835291 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EBF199E11C4F41A700B131C6 /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				EBBB8E951C477B0E00835291 /* AppDelegate.swift */,
 				EBBB8E971C477B0E00835291 /* ViewController.swift */,
+				EBF199E11C4F41A700B131C6 /* WebServiceHandler.swift */,
 				EBBB8E991C477B0E00835291 /* Main.storyboard */,
 				EBBB8E9C1C477B0E00835291 /* Assets.xcassets */,
 				EBBB8E9E1C477B0E00835291 /* LaunchScreen.storyboard */,
@@ -344,6 +347,7 @@
 			files = (
 				EBBB8F081C47C71500835291 /* Constants.swift in Sources */,
 				EBBB8EC71C47807900835291 /* Forecast.swift in Sources */,
+				EBF199E21C4F41A700B131C6 /* WebServiceHandler.swift in Sources */,
 				EBBB8E981C477B0E00835291 /* ViewController.swift in Sources */,
 				EBBB8EC51C47804E00835291 /* WeatherResponse.swift in Sources */,
 				EBBB8E961C477B0E00835291 /* AppDelegate.swift in Sources */,

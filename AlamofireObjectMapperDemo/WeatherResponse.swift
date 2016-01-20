@@ -10,6 +10,13 @@ import Foundation
 import ObjectMapper
 import AlamofireObjectMapper
 class WeatherResponse: Mappable {
+    
+ private struct GlobalConstants {
+        static let EMAIL_TXTFLD_TAG = 1
+        static let PASSWORD_TXTFLD_TAG = 2
+    }
+
+    
     var location: String?
     var three_day_forecast: [Forecast]?
     
