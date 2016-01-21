@@ -17,8 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let weatherResponse = WebServiceHandler()
-        
+        let weatherResponse = WebServiceHandler()        
           weatherResponse.fetchWeatherForecast({ (response) -> Void in
             print(response)
             let user = response
@@ -30,7 +29,7 @@ class ViewController: UIViewController {
                 print(forecast.temperature)
                 print(forecast.conditions)
             }
-
+            
             })
         
 //        let URL1 = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/f583be1121dbc5e9b0381b3017718a70c31054f7/sample_array_json"

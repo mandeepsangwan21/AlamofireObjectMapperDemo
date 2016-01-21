@@ -13,12 +13,7 @@ import ObjectMapper
 
 class WebServiceHandler : NSObject {
     
-//    {(parameters) -> return type in
-//    statements
-//    }
 
-//     var closure: (response : AnyObject , statuscode : Int) -> (NilLiteralConvertible)!
-    
     override init() {
         // perform some initialization here
         
@@ -36,8 +31,7 @@ class WebServiceHandler : NSObject {
                     print("JSON: \(JSON)")
                 }
                 switch response.result {
-                case .Success:
-                    
+                case .Success:                    
                     if response.response?.statusCode == 200 || response.response?.statusCode == 201 {
                         let user = Mapper<WeatherResponse>().map(response.result.value)
                         closure(response: user!)
